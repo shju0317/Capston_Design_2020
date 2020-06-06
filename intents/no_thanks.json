@@ -1,0 +1,29 @@
+{
+  "id": "5abee0c0-3911-4187-aff7-fad692a04e9a",
+  "name": "no_thanks",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "continue-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Thank you! Have a great day :)"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1540633299,
+  "fallbackIntent": false,
+  "events": []
+}

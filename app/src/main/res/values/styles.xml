@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        <item name="android:colorBackground">@color/colorBack</item>-->
+        <item name="android:textColor">@color/colorText</item>
+
+        <item name="toolbarStyle">@style/ToolbarStyle</item> <!--Toolbar 스타일-->
+        <item name="actionMenuTextColor">@color/colorText</item> <!--액션 메뉴의 텍스트 색상-->
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <!--Toolbar 스타일-->
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+<!--        <item name="android:background">@color/colorPrimaryDark</item> &lt;!&ndash; Toolbar의 배경색&ndash;&gt;-->
+        <item name="titleTextAppearance">@style/ToolbarTitleStyle</item> <!-- Toolbar의 타이틀 텍스트-->
+    </style>
+
+    <!-- Toolbar의 타이틀 텍스트-->
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/colorText</item> <!-- Toolbar의 타이틀 텍스트 색상-->
+        <item name="android:textSize">15dp</item> <!-- Toolbar의 타이틀 텍스트 사이즈-->
+    </style>
+
+    <!--Actionbar 스타일-->
+    <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="titleTextAppearance">@style/ActionBarTitleStyle</item>
+    </style>
+
+    <style name="ActionBarTitleStyle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+</resources>

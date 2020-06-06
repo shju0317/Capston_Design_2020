@@ -1,0 +1,33 @@
+{
+  "id": "e9d5cb53-cc22-4dc7-aa23-0ccf315b9dc2",
+  "parentId": "c735ed88-699c-472f-b7bd-892106b99b93",
+  "rootParentId": "c735ed88-699c-472f-b7bd-892106b99b93",
+  "name": "get_agenda - yes",
+  "auto": true,
+  "contexts": [
+    "get_agenda-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "continue-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "How may I help you?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1540063521,
+  "fallbackIntent": false,
+  "events": []
+}

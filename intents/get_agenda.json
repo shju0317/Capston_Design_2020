@@ -1,0 +1,58 @@
+{
+  "id": "c735ed88-699c-472f-b7bd-892106b99b93",
+  "name": "get_agenda",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "get.agenda",
+      "affectedContexts": [
+        {
+          "name": "get_agenda-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "b8ff1b42-c28d-4edc-aa6d-c8646a0dabd7",
+          "required": true,
+          "dataType": "@tracks",
+          "name": "tracks",
+          "value": "$tracks",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Sure! There will be 4 tracks of sessions. For which track do you want the information?"
+            },
+            {
+              "lang": "en",
+              "value": "The sessions are divided into 4 tracks. Please tell me for which track you want the session information?"
+            },
+            {
+              "lang": "en",
+              "value": "The sessions are segmented into 4 parallel tracks. For which track shall I provide you the information?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1540285088,
+  "fallbackIntent": false,
+  "events": []
+}
