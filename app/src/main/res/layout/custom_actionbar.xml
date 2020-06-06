@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_alignParentLeft="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/muse_icon2"/>
+
+    <TextView
+        android:text="MUSE"
+        android:id="@+id/title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/btnHistory"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:background="@drawable/top_history"-->
+<!--        android:layout_width="56dp"-->
+<!--        android:layout_height="56dp" />-->
+</RelativeLayout>
+

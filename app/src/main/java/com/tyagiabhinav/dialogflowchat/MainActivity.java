@@ -1,5 +1,6 @@
 package com.tyagiabhinav.dialogflowchat;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,7 +8,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -16,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.auth.oauth2.GoogleCredentials;
@@ -57,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
     private SessionsClient sessionsClient;
     private SessionName session;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,12 +69,17 @@ public class MainActivity extends AppCompatActivity {
         final ScrollView scrollview = findViewById(R.id.chatScrollView);
         scrollview.post(() -> scrollview.fullScroll(ScrollView.FOCUS_DOWN));
 
+//        final android.app.ActionBar actionBar = getActionBar();
+//        actionBar.setCustomView(R.layout.custom_actionbar);
+//        actionBar.setDisplayShowTitleEnabled(false);
+//        actionBar.setDisplayShowCustomEnabled(true);
+
+
         chatLayout = findViewById(R.id.chatLayout);
 
         // 상태바 없애기
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         ImageView sendBtn = findViewById(R.id.sendBtn);
         sendBtn.setOnClickListener(this::sendMessage);
@@ -97,6 +105,9 @@ public class MainActivity extends AppCompatActivity {
         // Java V2
         initV2Chatbot();
     }
+
+
+
 
     // Android client for older V1 --- recommend not to use this
     private void initChatbot() {
@@ -196,4 +207,6 @@ public class MainActivity extends AppCompatActivity {
         LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
         return (FrameLayout) inflater.inflate(R.layout.bot_msg_layout, null);
     }
+
+
 }

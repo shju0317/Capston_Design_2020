@@ -9,18 +9,17 @@
         android:allowBackup="true"
         android:icon="@drawable/muse_icon2"
         android:label="MUSE"
+        android:theme="@style/AppTheme"
         android:roundIcon="@drawable/muse_icon2"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".loadingactivity"
-            >
+        android:supportsRtl="true">
+        <activity android:name=".loadingactivity" android:theme="@style/AppTheme2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
+
 </manifest>

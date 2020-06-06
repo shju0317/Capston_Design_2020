@@ -1,23 +1,25 @@
 <resources>
+<!--    로딩화면 액션바 안보이도록-->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar"></style>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
 
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorPrimary">@color/colorPrimaryDark</item>
-<!--        <item name="colorAccent">@color/colorAccent</item>-->
-<!--        <item name="android:colorBackground">@color/colorBack</item>-->
-        <item name="android:textColor">@color/colorText</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--        <item name="colorAccent">@color/colorAccent</item>-->
+        <!--        <item name="android:colorBackground">@color/colorBack</item>-->
+        <!--        <item name="android:textColor">@color/colorText</item>-->
 
         <item name="toolbarStyle">@style/ToolbarStyle</item> <!--Toolbar 스타일-->
-        <item name="actionMenuTextColor">@color/colorText</item> <!--액션 메뉴의 텍스트 색상-->
-        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <!--        <item name="actionMenuTextColor">@color/colorText</item> &lt;!&ndash;액션 메뉴의 텍스트 색상&ndash;&gt;-->
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
     </style>
 
     <!--Toolbar 스타일-->
     <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
-<!--        <item name="android:background">@color/colorPrimaryDark</item> &lt;!&ndash; Toolbar의 배경색&ndash;&gt;-->
+        <!--        <item name="android:background">@color/colorPrimaryDark</item> &lt;!&ndash; Toolbar의 배경색&ndash;&gt;-->
         <item name="titleTextAppearance">@style/ToolbarTitleStyle</item> <!-- Toolbar의 타이틀 텍스트-->
     </style>
 
@@ -32,8 +34,18 @@
         <item name="titleTextAppearance">@style/ActionBarTitleStyle</item>
     </style>
 
+    <!-- Actionbar의 타이틀 텍스트-->
     <style name="ActionBarTitleStyle" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
         <item name="android:textColor">@color/colorText</item>
-        <item name="android:textSize">50dp</item>
+        <item name="android:textSize">30dp</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
