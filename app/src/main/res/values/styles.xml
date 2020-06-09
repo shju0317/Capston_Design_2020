@@ -31,7 +31,12 @@
 
     <!--Actionbar 스타일-->
     <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="title">@style/ActionBarTitleIcon</item>
         <item name="titleTextAppearance">@style/ActionBarTitleStyle</item>
+    </style>
+
+    <style name = "ActionBarTitleIcon" parent="android:TextAppearance.Holo.Widget.IconMenu.Item">
+        <item name="android:icon">@drawable/muse_icon2</item>
     </style>
 
     <!-- Actionbar의 타이틀 텍스트-->

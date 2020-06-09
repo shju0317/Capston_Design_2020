@@ -1,4 +1,4 @@
-package com.tyagiabhinav.dialogflowchat;
+package com.tyagiabhinav.muse;
 
 import org.junit.Test;
 

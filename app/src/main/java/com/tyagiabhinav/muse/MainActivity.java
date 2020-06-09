@@ -1,6 +1,5 @@
-package com.tyagiabhinav.dialogflowchat;
+package com.tyagiabhinav.muse;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,9 +8,8 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -19,7 +17,6 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.auth.oauth2.GoogleCredentials;
@@ -42,6 +39,7 @@ import ai.api.android.AIDataService;
 import ai.api.model.AIRequest;
 import ai.api.model.AIResponse;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -60,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
     // Java V2
     private SessionsClient sessionsClient;
     private SessionName session;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,6 +105,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Java V2
         initV2Chatbot();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
     }
 
 
@@ -208,5 +215,22 @@ public class MainActivity extends AppCompatActivity {
         return (FrameLayout) inflater.inflate(R.layout.bot_msg_layout, null);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        int id = item.getItemId();
 
+        if (id == R.id.btn_Clear) {
+            Toast.makeText(this, "대화내용을 삭제합니다!", Toast.LENGTH_SHORT).show();
+            playClearBtn();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void playClearBtn() {
+        setContentView(R.layout.activity_main);
+        Intent intentHome = new Intent(this, MainActivity.class);
+        startActivity(intentHome);
+    }
 }

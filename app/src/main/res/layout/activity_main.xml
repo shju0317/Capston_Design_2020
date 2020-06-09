@@ -6,6 +6,15 @@
     android:background="@color/colorBack"
     android:layout_margin="10dp">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="MUSE가 음악을 추천해줄게요 여러분의 기분/날씨를 알려주세요!"
+        android:layout_centerHorizontal="true"/>
+
+
     <RelativeLayout
         android:id="@+id/inputLayout"
         android:layout_width="match_parent"
@@ -34,7 +43,8 @@
             android:paddingTop="4dp"
             android:scaleX="0.8"
             android:scaleY="0.8"
-            android:src="@drawable/send3" />
+            android:src="@drawable/send3"
+            android:tooltipText="send"/>
 
         <EditText
             android:id="@+id/queryEditText"

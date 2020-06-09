@@ -1,4 +1,4 @@
-package com.tyagiabhinav.dialogflowchat;
+package com.tyagiabhinav.muse;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
