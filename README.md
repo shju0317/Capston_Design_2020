@@ -5,8 +5,8 @@
 
 ## :heavy_check_mark:Developer Environment
 
-  - [:four_leaf_clover:Dialogflow]()
-  - [:four_leaf_clover:Androidstudio]()
+  - Platform: [:four_leaf_clover:Dialogflow](https://dialogflow.cloud.google.com/#/login)
+  - IDE: [:four_leaf_clover:Androidstudio](https://developer.android.com/)
 
 ## :speech_balloon:How to use?
     
