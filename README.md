@@ -1,4 +1,4 @@
-# :music: MuseProject
+# :art: MuseProject
 
 chatbot with Android studio & Dialogflow.
 Dialogflow based chatbot into android app.
