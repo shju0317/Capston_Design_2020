@@ -1,7 +1,13 @@
-# MuseProject
-## chatbot with Android studio & Dialogflow
-Demo app to show the integration of Dialogflow based chatbot into android app.
+# :music: MuseProject
 
+chatbot with Android studio & Dialogflow.
+Dialogflow based chatbot into android app.
+
+## :heavy_check_mark:Developer Environment
+
+  - [:coffee:Dialogflow]()
+  - [:coffee:Androidstudio]()
+
+## :speech_balloon:How to use?
+    
 - Save your CLIENT_ACCESS_TOKEN in gradle.properties
-
-- Avoid use of V1. Move to V2
