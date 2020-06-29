@@ -1,7 +1,5 @@
 # :art: MuseProject
-
-- chatbot with Android studio & Dialogflow.
-- Dialogflow based chatbot into android app.
+ Dialogflow based chatbot into android app.
 
 ## :heavy_check_mark:Developer Environment
 
