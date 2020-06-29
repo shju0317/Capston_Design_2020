@@ -1,12 +1,12 @@
 # :art: MuseProject
 
-chatbot with Android studio & Dialogflow.
-Dialogflow based chatbot into android app.
+- chatbot with Android studio & Dialogflow.
+- Dialogflow based chatbot into android app.
 
 ## :heavy_check_mark:Developer Environment
 
-  - [:coffee:Dialogflow]()
-  - [:coffee:Androidstudio]()
+  - [:four_leaf_clover:Dialogflow]()
+  - [:four_leaf_clover:Androidstudio]()
 
 ## :speech_balloon:How to use?
     
