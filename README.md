@@ -16,7 +16,7 @@
     
 - Save your CLIENT_ACCESS_TOKEN in gradle.properties
 
-## :Introduce
+## 📣Introduce
     
 - [소개영상(Youtube)] https://www.youtube.com/watch?v=v1aGRZp4c6M
 
