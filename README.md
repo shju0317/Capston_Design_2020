@@ -18,5 +18,5 @@
 
 ## 📣Introduce
     
-- [소개영상(Youtube)] https://www.youtube.com/watch?v=v1aGRZp4c6M
+- [소개영상(Youtube)](https://www.youtube.com/watch?v=XHO-Zoc3xMM)
 
